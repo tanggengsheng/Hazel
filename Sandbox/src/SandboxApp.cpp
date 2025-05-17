@@ -10,12 +10,9 @@ public:
 	~SandboxApp()
 	{
 	}
-
 };
 
-int main()
+Hazel::Application* Hazel::CreateApplication()
 {
-	SandboxApp* app = new SandboxApp();
-	app->Run();
-	delete app;
+	return new SandboxApp();
 }
